@@ -1,0 +1,26 @@
+input.ng-touched.ng-invalid{
+    border-color: #c20013;
+}
+
+input.ng-valid{
+    border-color: #129230;
+}
+
+.green-icon{
+    color: #129230;
+}
+.red-icon{
+    color: #c20013;
+}
+
+#toast-container > div{
+    opacity: 1;
+}
+
+tr{
+    cursor: pointer;
+}
+
+.fas:hover{
+    color: #c20013;
+}

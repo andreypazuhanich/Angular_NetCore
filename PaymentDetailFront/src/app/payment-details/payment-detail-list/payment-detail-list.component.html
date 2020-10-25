@@ -1,0 +1,19 @@
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Имя владельца</th>
+            <th>Номер карты</th>
+            <th>Срок годности</th>
+            <th>Удалить</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let pd of service.list'>
+            <td (click)="populateForm(pd)">{{pd.CardOwnerName}}</td>
+            <td (click)="populateForm(pd)">{{pd.CardNumber}}</td>
+            <td (click)="populateForm(pd)">{{pd.ExpirationDate}}</td>
+            <td><i class="fas fa-trash-alt" (click)="deletePaymentDetail(pd.PMId)"></i></td>
+        </tr>
+    </tbody>
+</table>
